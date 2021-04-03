@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  #description {
+    font-size: 1.1vw;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  #title {
+    font-size: 3vw;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .circular--square {
+    border-radius: 50%;
+  }
+  
+  .profile_pic {
+    height: 8%;
+    width: 10%;
+    position: fixed; 
+    bottom: 640px;
+    left: 35%;  
+  }
+
+  #initialBody {
+    position: fixed; 
+    bottom: -80px;
+    margin-bottom: 70px; 
+    left: 45%; 
+    transform: translateX(-40%); 
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  #description {
+    font-size: 3.6vw;
+    margin-top: 10px;
+  }
+
+  #title {
+    font-size: 8vw;
+    margin-bottom: 0px;
+  }
+
+  .circular--square {
+    border-radius: 50%;
+  }
+  
+  .profile_pic {
+    height: 80px;
+    width: 70px;
+    margin-top: 5px; 
+    margin-left: 35%; 
+  }
+
+  #initialBody {
+    position: fixed; 
+    bottom: -40px;
+    margin-bottom: 50px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 220px; 
+  }
 }
 
-.App-link {
-  color: #61dafb;
+#strava {
+  color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#blog {
+  color:blue;
+}
+
+#YT {
+  color: blue;
 }
