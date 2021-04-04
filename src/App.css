@@ -38,7 +38,7 @@
 
   #title {
     font-size: 8vw;
-    margin-top: 0px;
+    margin-top: 30px;
   }
 
   .circular--square {
@@ -48,17 +48,17 @@
   .profile_pic {
     height: 80px;
     width: 70px;
-    margin-top: auto; 
     margin-left: 30%; 
-    bottom: 103%;
-    position: absolute; 
   }
 
   #initialBody {
     position: absolute; 
-    bottom: 10px;
-    left: 50%; 
+    bottom: -40px;
+    left: 54%; 
     transform: translateX(-50%);
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
   }
 }
 
