@@ -55,8 +55,8 @@
   }
 
   #initialBody {
-    position: absolute; 
-    bottom: -40px;
+    position: fixed; 
+    bottom: 10px;
     left: 50%; 
     transform: translateX(-50%);
     margin-top: 220px; 
