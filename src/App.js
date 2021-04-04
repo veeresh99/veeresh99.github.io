@@ -74,7 +74,7 @@ function App() {
               <br/> <br/>
               <ul>
               <OverlayTrigger
-                placement="left"
+                placement="right"
                 delay={{ show: 50, hide: 100 }}
                 overlay={renderTooltipHS}
               >
@@ -83,14 +83,14 @@ function App() {
                 <li>AbbVie</li>
                 <dl>
                   <OverlayTrigger
-                    placement="left"
+                    placement="right"
                     delay={{ show: 50, hide: 100 }}
                     overlay={renderTooltipAS}
                   >
                   <li>Software Developer Intern</li>
                   </OverlayTrigger>
                   <OverlayTrigger
-                    placement="left"
+                    placement="right"
                     delay={{ show: 50, hide: 100 }}
                     overlay={renderTooltipAD}
                   >
@@ -98,21 +98,21 @@ function App() {
                   </OverlayTrigger>
                 </dl>
                 <OverlayTrigger
-                    placement="left"
+                    placement="right"
                     delay={{ show: 50, hide: 100 }}
                     overlay={renderTooltipS}
                 >
                 <li>Product Manager Intern @ SAP</li>
                 </OverlayTrigger>
                 <OverlayTrigger
-                    placement="left"
+                    placement="right"
                     delay={{ show: 50, hide: 100 }}
                     overlay={renderTooltipN}
                 >
                 <li>President/Co-Founder of NeuroTech @ UIUC</li>
                 </OverlayTrigger>
                 <OverlayTrigger
-                    placement="left"
+                    placement="right"
                     delay={{ show: 50, hide: 100 }}
                     overlay={renderTooltipE}
                 >
