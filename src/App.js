@@ -42,10 +42,10 @@ function App() {
 
   return (
     <body>
+      <div id="initialBody">
       <div class="profile_pic">
           <img src={profile} class="circular--square"/>
       </div>
-      <div id="initialBody">
        
         {/* <div class="col-4 text-center .d-none .d-xl-block" id="sidebar">
           About
