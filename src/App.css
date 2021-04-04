@@ -50,8 +50,8 @@
     width: 70px;
     margin-top: 10px; 
     margin-left: 35%; 
-    margin-bottom: 0px;
-    position: absolute; 
+    margin-bottom: 50px;
+    position: fixed; 
   }
 
   #initialBody {
@@ -59,7 +59,6 @@
     bottom: 10px;
     left: 50%; 
     transform: translateX(-50%);
-    margin-top: 220px; 
   }
 }
 
