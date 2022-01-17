@@ -10,7 +10,7 @@
 }
 
 .sub-container {
-  margin-left: 25%;
+  margin-left: 30%;
 }
 
 .description {
@@ -93,7 +93,7 @@ background: linear-gradient(90deg, rgba(255,54,54,1) 0%, rgba(255,79,0,1) 50%, r
   }
   .title-div {
     text-align: center;
-
+    margin-bottom: 20px;
   }
   .main_container {
     text-align: center;
