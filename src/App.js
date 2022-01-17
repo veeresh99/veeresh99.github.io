@@ -1,127 +1,54 @@
 import logo from './logo.svg';
 import './App.css';
-import { Tooltip, OverlayTrigger } from 'react-bootstrap';
-import profile  from './profile.jpg';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
-  const renderTooltipHS = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      January 2021 - Present
-    </Tooltip>
-  );
-
-  const renderTooltipAS = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      May 2020 - December 2020
-    </Tooltip>
-  );
-
-  const renderTooltipAD = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      January 2020 - May 2020
-    </Tooltip>
-  );
-
-  const renderTooltipS = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      June 2020 - August 2020
-    </Tooltip>
-  );
-
-  const renderTooltipN = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      September 2019 - August 2020
-    </Tooltip>
-  );
-
-  const renderTooltipE = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      May 2019 - August 2019
-    </Tooltip>
-  );
-
   return (
     <body>
-      <div id="initialBody">
-      <div class="profile_pic">
-          <img src={profile} class="circular--square"/>
+      <div className="main_container">
+        <p className="welcome_text">welcome! i'm <a href="https://www.linkedin.com/in/veeresh-neralagi/" target="_blank">veeresh</a> and here's what i've been up to.</p>
       </div>
-       
-        {/* <div class="col-4 text-center .d-none .d-xl-block" id="sidebar">
-          About
-          <br/>
-          Blog
-          <br/>
-          The Misinformation Project
-          <br/>
-          Running
-        </div> */}
-        
-            
-              <h1 id="title">
-                  Hey there, I'm Veeresh!
-              </h1>
-              <p id="description">
-              I am a Software Engineer and aspiring Entrepreneur from San Jose, CA.
-              <br/>
-              I love to <a id="strava" href="https://www.strava.com/athletes/49322987" target="_blank">run</a>, 
-              <a href="https://veeresh2.medium.com/" id="blog" target="_blank"> blog</a>, and film/produce videos for my  
-              <a href="https://www.youtube.com/channel/UC242767TSTfsqGqijMxPZTw?view_as=subscriber" id="YT" target="_blank"> YouTube channel</a>.
-              <br/> <br/>
-              Best way to connect? <a href="https://veeresh2.medium.com/" id="blog" target="_blank"> Twitter! </a>
-              <br/><br/>
-              A brief overview of my experiences so far:
-              <br/> <br/>
-              <ul>
-              <OverlayTrigger
-                placement="right"
-                delay={{ show: 50, hide: 100 }}
-                overlay={renderTooltipHS}
-              >
-                <li>Software Developer Co-Op @ HubSpot</li>
-              </OverlayTrigger>
-                <li>AbbVie</li>
-                <dl>
-                  <OverlayTrigger
-                    placement="right"
-                    delay={{ show: 50, hide: 100 }}
-                    overlay={renderTooltipAS}
-                  >
-                  <li>Software Developer Intern</li>
-                  </OverlayTrigger>
-                  <OverlayTrigger
-                    placement="right"
-                    delay={{ show: 50, hide: 100 }}
-                    overlay={renderTooltipAD}
-                  >
-                  <dd>DevOps Engineer Intern</dd>
-                  </OverlayTrigger>
-                </dl>
-                <OverlayTrigger
-                    placement="right"
-                    delay={{ show: 50, hide: 100 }}
-                    overlay={renderTooltipS}
-                >
-                <li>Product Manager Intern @ SAP</li>
-                </OverlayTrigger>
-                <OverlayTrigger
-                    placement="right"
-                    delay={{ show: 50, hide: 100 }}
-                    overlay={renderTooltipN}
-                >
-                <li>President/Co-Founder of NeuroTech @ UIUC</li>
-                </OverlayTrigger>
-                <OverlayTrigger
-                    placement="right"
-                    delay={{ show: 50, hide: 100 }}
-                    overlay={renderTooltipE}
-                >
-                <li>Data Analyst Intern @ Empinfo</li>
-                </OverlayTrigger>
-              </ul>
-              </p>
-          
-      </div>
+      <Container className="sub-container">
+        <Row>
+          <div className="title-div">
+            <h2>Projects</h2>
+          </div>
+          <div className="card card-1">
+            <p className="title"><a href="https://shoestack.vercel.app/" target="_blank" className="a-div">Shoestack</a></p>
+            <p className="description">Building a platform that helps runners efficiently find their next pair of running shoes.</p>
+          </div>
+          <div className="card card-2">
+            <p className="title"><a href="https://intro-website-dev.vercel.app/" target="_blank" className="a-div">Intro to WebDev</a></p>
+            <p className="description">Creating a 3 part lecture series on an introduction to website development! </p>
+          </div>
+        </Row>
+        <Row>
+          <div className="title-div">
+            <h2>Writing</h2>
+          </div>
+          <div className="card card-3">
+            <p className="title"><a href="https://the-transcendence.vercel.app/" target="_blank" className="a-div">The Transcendence</a></p>
+            <p className="description"> Bringing the most authentic stories in the world of endurance sports and redefining what's possible. </p>
+          </div>
+          <div className="card card-5">
+            <p className="title"><a href="https://veeresh2.medium.com/" target="_blank" className="a-div">Tech Blog</a></p>
+            <p className="description"> I write about technology and interview notable people in various disciplines. </p>
+          </div>
+        </Row>
+        <Row>
+          <div className="title-div">
+            <h2>Running</h2>
+          </div>
+          <div className="card card-6">
+            <p className="title"><a href="https://www.baa.org/" target="_blank" className="a-div">Boston Marathon</a></p>
+            <p className="description"> Excited to be training for my first Marathon major on April 18th in Boston!   </p>
+          </div>
+          <div className="card card-7">
+            <p className="title"><a href="https://www.strava.com/athletes/49322987" target="_blank" className="a-div">Strava</a></p>
+            <p className="description"> A fitness social-media platform where I document all my runs and races.  </p>
+          </div>
+        </Row>
+      </Container>
     </body>
   );
 }
